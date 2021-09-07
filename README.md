@@ -1,6 +1,6 @@
-Testing the Dipole Model of Orientation Tuning
+Models of Orientation Tuning (BUILDING IN PROGRESS)
 
-Original Source References
+<u>Some Original Source References</u>
 
 - See ***Linearity Section*** from [notes on spectral analysis](/Users/luis/Box/boxNOTES/ntsSPECTRAL)
 
@@ -10,9 +10,9 @@ Original Source References
 
 ## Properties of Individual Cells 
 
-All known mammals [] have visual neurons, or 'units', that are *tuned* to the orientation of a moving stimulus that lands on their receptive fields. Here are  some key properties of these 'orientation' tuned units...  
+All known mammals [] have visual neurons, or 'units', that are *tuned* to the orientation of an elongated stimulus that lands on their receptive fields (RFs). These are some key properties of these 'orientation' tuned units...  
 
-> each unit has a "preferred orientation," that is, it responds best to one particular stimulus orientation. Different units have different preferred orientation preference
+> Each unit has a "preferred orientation," that is, it responds best to one particular stimulus orientation. Different units have different preferred orientation preference
 >
 > The strength of a unit's response is inversely related to the difference between the unit's preferred orienation and the motion direction of the stimulus:
 >
@@ -23,9 +23,9 @@ All known mammals [] have visual neurons, or 'units', that are *tuned* to the or
 
 
 
-## Implementation Vs. Function of Orientation Tuning
 
-*Why are such units tuned to orientation?* Despite decades of research, our understanding of orientation tuning remains incomplete. At least two approaches have been taken to understand the topic. (1) First, is to focus on the *function* of orientation tuning, namely how it influences downstream visual processes and how it benefits perception and behavior (2) Another approach is to focus on how orientation tuning is generated, or *implemented*, by the units that make up the early visual system (i.e. the retina, thalamus, and V1). Both of these approaches are needed to aquire a complete understanding orientation tuning. 
+
+*Why are such units tuned to orientation?* Despite decades of research, our understanding of orientation tuning remains incomplete. At least two approaches are taken to understand the topic. (1) First, is to focus on the *function* of orientation tuning, namely how it influences downstream visual processes and how it benefits perception and behavior (2) Another approach is to focus on how orientation tuning is generated, or *implemented*, by the units that make up the early visual system (i.e. the retina, thalamus, and V1) of mammals. Both of these approaches are needed to aquire a complete understanding orientation tuning. 
 
 Here I focus a model, which attempts to explain how tuning is implemented, with less emphasis function. 
 
@@ -45,15 +45,13 @@ RGCs are *tuned*, or *selective*, to specific features of a stimulus that lands 
 
 The mouse retina contains center-surround RGCs that respond best to either the onset or offset of a circular stimulus and can have sustained or transient temporal responses  6,7,17,19. The axonal afferents of these center-surround RGCs targeting the dLGN are relatively large 34, and innervate all regions of the dLGN, especially the medial part of the dLGN, known as the *core* 29,38,39 (**Figure 5**).
 
-dLGN
-
-### Contrast Polarity 
+### dLGN
 
 Neurons in the dLGN have ON or OFF center-surround RFs 34,45,47,48, much like those in the retina. Center surround cells make up the majority of cells in dLGN 30,34,45-48, although they are a minority (~5%) in the retina suggesting that the vast majority of dLGN inputs come from these center-surround RGCs 34. The dLGN core region, in particular, houses a large proportion of these center-surround cells 34,39,48 **(****Figure 5****)**.
 
 The RFs of center surround dLGN cells have circular central subregions 34,46,47 that, generally, are surrounded by an annulus with an opposite preference for contrast polarity 34,48. Stimulation of their central subregion can elicit a sustained, transient, monophasic 34, or biphasic 34,48,49 temporal response. Moreover, these center-surround dLGN cells are *not* selective to the direction of a stimulus moving across their RF 34,47,48. Many the spatial and temporal response properties of center-surround dLGN neurons are similar to those of center surround RGCs.
 
-### Thalamocortical
+### Thalamocortical Network
 
 Both direction selective 39 and ON/OFF center 39,49,65 dLGN neurons innervate mouse V1. The dLGN core, which populated by center surround cells, appears to preferentially target V1 neurons in layer 439, while the direction tuned shell region of the dLGN sends its axons to the superficial layers V1 39 (although this dichotomy is not absolute 54). Tuned dLGN neurons 9,33,34,45,48,53 and their axonal projections to V1 39,54 also show a biased preferences towards cardinal orientations 54,68.
 
