@@ -18,6 +18,7 @@ df          = df_units.roi_stack;
 clearvars -except df_units
 
 % Initialize
+
 clc;
 df  = df_units.roi_stack;
 df = df(df.has_rf_on_kern & df.has_rf_off_kern,:);
